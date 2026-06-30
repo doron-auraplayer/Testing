@@ -1,5 +1,5 @@
 {
-  "name": "POP",
+  "name": "POP_NEW",
   "serviceNames": [],
   "keepAlive": [],
   "direction": "LTR",
@@ -112,7 +112,7 @@
           }
         }
       ],
-      "javascript": "@inject:POP.Popups.page.js",
+      "javascript": "@inject:POP_NEW.Popups.page.js",
       "shouldSkip": false,
       "hasMenu": true,
       "inMenu": true,
@@ -181,6 +181,7 @@
       "name": "TEST2.html",
       "params": [],
       "multiRecord": {
+        "params": [],
         "disableDataTables": false,
         "isSearchable": false,
         "isAddRows": false,
@@ -193,10 +194,127 @@
       "hasMenu": true,
       "inMenu": true,
       "centred": false
+    },
+    {
+      "name": "TEST3.html",
+      "title": "TEST3",
+      "params": [
+        {
+          "dataTypeInfo": {
+            "type": "TEXT"
+          },
+          "isSortable": false,
+          "inTable": false,
+          "newLine": true,
+          "required": false,
+          "custom": false,
+          "validationFunction": "NONE",
+          "fromInput": false,
+          "centred": false,
+          "id": {
+            "name": "Title",
+            "serviceName": "Demo_getMovies"
+          },
+          "paramLabel": "Title",
+          "visible": true
+        },
+        {
+          "dataTypeInfo": {
+            "type": "TEXT"
+          },
+          "isSortable": false,
+          "inTable": false,
+          "newLine": true,
+          "required": false,
+          "custom": false,
+          "validationFunction": "NONE",
+          "fromInput": false,
+          "centred": false,
+          "id": {
+            "name": "Year",
+            "serviceName": "Demo_getMovies"
+          },
+          "paramLabel": "Year",
+          "visible": true
+        },
+        {
+          "dataTypeInfo": {
+            "type": "TEXT"
+          },
+          "isSortable": false,
+          "inTable": false,
+          "newLine": true,
+          "required": false,
+          "custom": false,
+          "validationFunction": "NONE",
+          "fromInput": false,
+          "centred": false,
+          "id": {
+            "name": "imdbID",
+            "serviceName": "Demo_getMovies"
+          },
+          "paramLabel": "imdbID",
+          "visible": true
+        },
+        {
+          "dataTypeInfo": {
+            "type": "TEXT"
+          },
+          "isSortable": false,
+          "inTable": false,
+          "newLine": true,
+          "required": false,
+          "custom": false,
+          "validationFunction": "NONE",
+          "fromInput": false,
+          "centred": false,
+          "id": {
+            "name": "Type",
+            "serviceName": "Demo_getMovies"
+          },
+          "paramLabel": "Type",
+          "visible": true
+        },
+        {
+          "dataTypeInfo": {
+            "type": "TEXT"
+          },
+          "isSortable": false,
+          "inTable": false,
+          "newLine": true,
+          "required": false,
+          "custom": false,
+          "validationFunction": "NONE",
+          "fromInput": false,
+          "centred": false,
+          "id": {
+            "name": "Poster",
+            "serviceName": "Demo_getMovies"
+          },
+          "paramLabel": "Poster",
+          "visible": true
+        }
+      ],
+      "multiRecord": {
+        "params": [],
+        "type": "table",
+        "disableDataTables": false,
+        "isSearchable": true,
+        "isAddRows": false,
+        "isResponsive": false,
+        "isHidden": false,
+        "startIndex": 0
+      },
+      "actions": [],
+      "javascript": "",
+      "shouldSkip": false,
+      "hasMenu": true,
+      "inMenu": true,
+      "centred": false
     }
   ],
-  "loginPage": "TEST2.html",
-  "javascript": "@inject:POP.common.js",
+  "loginPage": "Popups.html",
+  "javascript": "@inject:POP_NEW.common.js",
   "createdBy": "admin",
   "isCompleted": true,
   "labels": [
