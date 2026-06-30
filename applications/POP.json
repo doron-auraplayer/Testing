@@ -1,0 +1,205 @@
+{
+  "name": "POP",
+  "serviceNames": [],
+  "keepAlive": [],
+  "direction": "LTR",
+  "theme": {
+    "themeColor": "#00AB7D",
+    "captionColor": "yellow",
+    "labelColor": "#EBF2EC",
+    "backgroundColor": "#DFD02E",
+    "backgroundColor2": "#B4D9B7",
+    "backgroundColor3": "#DAB6B6",
+    "formBackgroundColor": "#FFFFFF",
+    "headerBackgroundColor": "#FFFFFF",
+    "headerColor": "#669489",
+    "titleColor": "#669489",
+    "titlePosition": "titleInForm",
+    "titleAlignment": "center",
+    "inputLabelColor": "#ADBDC9",
+    "inputColor2": "#FFFFFF",
+    "inputLabelPosition": "aboveLabel",
+    "inputFontSize": "13",
+    "inputLabelFontSize": "13",
+    "inputBorderStyle": "noBorder",
+    "inputAlignment": "center",
+    "inputBorderSize": "1",
+    "inputBorderRadius": "19",
+    "buttonColor": "#FFFFFF",
+    "buttonBackgroundColor": "#FF8680",
+    "buttonAlignment": "buttonCentred",
+    "buttonBorderColor": "#FF8680",
+    "buttonFontSize": "16",
+    "tableHeaderBackgroundColor": "#FF8680",
+    "tableHeaderTextColor": "F5F5F0",
+    "tableHoverBackgroundColor": "#FF8680",
+    "tableEvenRowBackgroundColor": "FFFFFF",
+    "tableOddRowBackgroundColor": "#FFFFFF",
+    "tableRowTextColor": "#ADBDC9",
+    "sidebarLogoWidth": "200",
+    "logoPosition": "logoHeaderAndMenu",
+    "desktopFormWidth": "900",
+    "formBorderRadius": "5",
+    "injectAnimation": "fade",
+    "menuTitle": "xyz",
+    "inputFontFamily": "Roboto",
+    "inputLabelFontFamily": "Palatino Linotype",
+    "name": "myCoolTheme",
+    "additionalStyle": "#mainPage {\r\n    background: linear-gradient(180deg, #C6E8DB 0%, #EEFCFC 100%);\r\n}\r\n\r\n.ui-widget-content {\r\n    background: #EEFCFC url(images/ui-bg_highlight-soft_100_eeeeee_1x100.png) 50% top repeat-x;\r\n}\r\n\r\nh3 {\r\n    font-family: Palatino;\r\n}\r\n\r\n.ui-widget {\r\n    font-family: Palatino;\r\n}\r\n\r\n#header-title { border-bottom: none!important;}\r\n\r\n.ui-header {\r\n    background: linear-gradient(180deg, #C6E8DB 100%, #EEFCFC 100%);\r\n}\r\n\r\n#titleRow-button {\r\n    background-color: #C6E8DB!important;\r\n}\r\n\r\n#header {\r\n    box-shadow: none!important;\r\n}\r\n\r\n.dtr-title {\r\n    color: #344451;\r\n}\r\n\r\nlabel, .read-only-label nobr {\r\n    color: #ACBCC9!important;\r\n}\r\n\r\ninput[type], input[data-type], textarea {\r\n    border: 2px solid #E3EBF2!important;\r\n    border-radius: 24px!important;\r\n}\r\n\r\n.fa-pencil {color: #b97106!important;}\r\n.fa-trash-o {color: #4e4e4e!important;}\r\n.fa-tasks {background: linear-gradient(135deg, #1C8EF5 0%, #4FD0FF 100%)!important;}\r\n\r\n#Cancel {\r\n    background: #FFFFFF !important;\r\n    color: #e91e63!important;\r\n    border-radius: 10px!important;\r\n}\r\n\r\nbutton {\r\n    box-shadow: none!important;\r\n}\r\n.dropdown-container  {\r\n    border: 2px solid #E3EBF2!important;\r\n    border-radius: 24px!important;\r\n\r\n}\r\n\r\n\r\n\r\n@media only screen and (min-width: 680px) {\r\n\t.myCoolTheme #content {\r\n\t\t\t    margin: 25px auto 100px auto !important;\r\n\t\t}\r\n\t}\r\n\t\r\n\t.myCoolTheme #content {\r\n\t\twidth: 90%;\r\n   \t \tmargin: 15px auto 0 auto !important;\r\n    }\r\n"
+  },
+  "design": {
+    "templateVersion": 0,
+    "roundedCorners": true,
+    "centerDesktopPages": true,
+    "desktopInputWidth": false
+  },
+  "logoWidth": 90,
+  "backgroundStyle": "crop",
+  "backgroundOpacity": 0,
+  "structure": "spa",
+  "pages": [
+    {
+      "name": "Popups.html",
+      "title": "Popups",
+      "params": [],
+      "multiRecord": {
+        "params": [],
+        "type": "table",
+        "disableDataTables": false,
+        "isSearchable": true,
+        "isAddRows": false,
+        "isResponsive": false,
+        "isHidden": false,
+        "startIndex": 0
+      },
+      "actions": [
+        {
+          "event": {
+            "type": "buttonClick",
+            "element": "popUpIframe",
+            "elementId": "popUpIframe",
+            "attributes": [
+              "bottom",
+              "100",
+              "false",
+              "true"
+            ]
+          },
+          "action": {
+            "type": "callFunction",
+            "attribute": {
+              "main": "popUpIframe"
+            }
+          }
+        },
+        {
+          "event": {
+            "type": "buttonClick",
+            "element": "popUpIframe2",
+            "elementId": "popUpIframe2",
+            "attributes": [
+              "bottom",
+              "100",
+              "false",
+              "false"
+            ]
+          },
+          "action": {
+            "type": "callFunction",
+            "attribute": {
+              "main": "onButtonClick_popUpIframe2"
+            }
+          }
+        }
+      ],
+      "javascript": "@inject:POP.Popups.page.js",
+      "shouldSkip": false,
+      "hasMenu": true,
+      "inMenu": true,
+      "centred": true
+    },
+    {
+      "name": "YYY.html",
+      "title": "XXX",
+      "params": [
+        {
+          "dataTypeInfo": {
+            "type": "READONLY"
+          },
+          "isSortable": false,
+          "inTable": false,
+          "newLine": true,
+          "required": false,
+          "custom": true,
+          "validationFunction": "NONE",
+          "fromInput": false,
+          "centred": false,
+          "id": {
+            "name": "XXX"
+          },
+          "paramLabel": "XXX",
+          "paramValue": "XXXX",
+          "visible": true
+        }
+      ],
+      "multiRecord": {
+        "params": [],
+        "type": "table",
+        "disableDataTables": false,
+        "isSearchable": true,
+        "isAddRows": false,
+        "isResponsive": false,
+        "isHidden": false,
+        "startIndex": 0
+      },
+      "actions": [],
+      "javascript": "",
+      "shouldSkip": false,
+      "hasMenu": true,
+      "inMenu": true,
+      "centred": false
+    },
+    {
+      "name": "TEST1.html",
+      "params": [],
+      "multiRecord": {
+        "params": [],
+        "disableDataTables": false,
+        "isSearchable": false,
+        "isAddRows": false,
+        "isResponsive": false,
+        "isHidden": false,
+        "startIndex": 0
+      },
+      "actions": [],
+      "shouldSkip": false,
+      "hasMenu": true,
+      "inMenu": true,
+      "centred": false
+    },
+    {
+      "name": "TEST2.html",
+      "params": [],
+      "multiRecord": {
+        "disableDataTables": false,
+        "isSearchable": false,
+        "isAddRows": false,
+        "isResponsive": false,
+        "isHidden": false,
+        "startIndex": 0
+      },
+      "actions": [],
+      "shouldSkip": false,
+      "hasMenu": true,
+      "inMenu": true,
+      "centred": false
+    }
+  ],
+  "loginPage": "TEST2.html",
+  "javascript": "@inject:POP.common.js",
+  "createdBy": "admin",
+  "isCompleted": true,
+  "labels": [
+    "TESTING"
+  ]
+}
